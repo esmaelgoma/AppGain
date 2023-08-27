@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "243185824267",
+    "project_id": "untitled-app-gain",
+    "storage_bucket": "untitled-app-gain.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243185824267:android:dedbcc643d525e005ccd0e",
+        "android_client_info": {
+          "package_name": "com.example.app_gain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243185824267-0eaa78vugnuvse29u2clukknsrjkjd31.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDr_5ysKNbhDmYcA9xBDE8ruprAiDNTa40"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243185824267-0eaa78vugnuvse29u2clukknsrjkjd31.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
