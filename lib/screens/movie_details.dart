@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:app_gain/modules/product.dart';
-
 import '../service/get_product.dart';
 
 class MovieDetails extends StatefulWidget {

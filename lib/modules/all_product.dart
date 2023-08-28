@@ -53,7 +53,7 @@ class Result {
     });
 
     String overview;
-    OriginalLanguage originalLanguage;
+    String originalLanguage;
     String originalTitle;
     bool video;
     String title;
@@ -69,7 +69,7 @@ class Result {
 
     factory Result.fromJson(Map<dynamic, dynamic> json) => Result(
         overview: json["overview"],
-        originalLanguage: originalLanguageValues.map[json["original_language"]]!,
+        originalLanguage: json["original_language"],
         originalTitle: json["original_title"],
         video: json["video"],
         title: json["title"],
@@ -86,7 +86,7 @@ class Result {
 
     Map<dynamic, dynamic> toJson() => {
         "overview": overview,
-        "original_language": originalLanguageValues.reverse[originalLanguage],
+        "original_language": originalLanguage,
         "original_title": originalTitle,
         "video": video,
         "title": title,
@@ -100,25 +100,4 @@ class Result {
         "adult": adult,
         "vote_count": voteCount,
     };
-}
-
-enum OriginalLanguage { EN, JA, PL, IT }
-
-final originalLanguageValues = EnumValues({
-    "en": OriginalLanguage.EN,
-    "it": OriginalLanguage.IT,
-    "ja": OriginalLanguage.JA,
-    "pl": OriginalLanguage.PL
-});
-
-class EnumValues<T> {
-    Map<String, T> map;
-    late Map<T, String> reverseMap;
-
-    EnumValues(this.map);
-
-    Map<T, String> get reverse {
-        reverseMap = map.map((k, v) => MapEntry(v, k));
-        return reverseMap;
-    }
 }
